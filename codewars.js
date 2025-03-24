@@ -52,3 +52,19 @@ function basicOp(operation, value1, value2){
 console.log(basicOp('+', 4, 7));
 
 6.
+function hero(bullets, dragons){
+    //Get Coding!
+      if (bullets >= dragons*2){
+        return true
+      } else {
+        return false
+      }
+    }
+7.
+function century(year) {
+    // Finish this :)
+  
+  return Math.ceil(year / 100);
+  }
+  8. 
+  
