@@ -99,3 +99,58 @@ function findNeedle(haystack) {
   let needle = haystack.indexOf("needle")
   return `found the needle at position ${needle}`
 }
+// 12.
+function removeChar(str){
+  //You got this!
+ return  str.slice(1,-1);
+ };
+//  13. 
+function findAverage(array) {
+  // your code here
+  if (array.length === 0){
+    return 0;
+  }
+  const sum = array.reduce((acc, num) => acc + num, 0);
+  return sum / array.length;
+}
+// 14.
+function disemvowel(str) {
+  return str.replace(/[aeiouAEIOU]/g, '');;
+  }
+// 15.
+function openOrSenior(members) {
+  return members.map(member => {
+      const [age, handicap] = member;
+      if (age >= 55 && handicap > 7) {
+          return "Senior";
+      } else {
+          return "Open";
+      }
+  });
+}
+// 16. 
+function XO(str) {
+  //code here
+let lowerStr = str.toLowerCase();
+let x = (lowerStr.match(/x/g) || []).length;
+let o= (lowerStr.match(/o/g) || []).length;
+return x === o;
+}
+// 17.
+function maps(x){
+  return x.map(el=> el*2)
+  }
+// 18.
+function isTriangle(a, b, c) {
+  if (a > 0 && b > 0 && c > 0 &&
+      a + b > c && a + c > b && b + c > a) {
+    return true;  
+  } else {
+    return false; 
+  }
+}
+// 19.
+const binaryArrayToNumber = arr => {
+  // your code
+  return parseInt(arr.join(''), 2);;
+};
