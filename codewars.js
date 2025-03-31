@@ -154,3 +154,32 @@ const binaryArrayToNumber = arr => {
   // your code
   return parseInt(arr.join(''), 2);;
 };
+// 20.
+function sumTwoSmallestNumbers(numbers) {  
+  // Code here
+    numbers.sort((a, b) => a - b);
+  return numbers[0] + numbers[1];
+}
+// 21.
+function countSheeps(sheep) {
+  // TODO
+  return sheep.filter(sheep => sheep === true).length
+}
+// 22.
+function longest(s1, s2) {
+  // your code
+  const uniqueLetters = new Set(s1 + s2);
+  return [...uniqueLetters].sort().join('');
+}
+// 23.
+const min = (list) => Math.min(...list);
+const max = (list) => Math.max(...list);
+// 24.function noSpace(x){
+return x.replace(/\s+/g, '');
+}
+// 25.
+const stringToNumber = function(str){
+  // put your code here
+  
+  return Number(str);
+}
