@@ -183,3 +183,19 @@ const stringToNumber = function(str){
   
   return Number(str);
 }
+// 26.
+function addBinary(a,b) {
+  let sum = a + b;
+   return sum.toString(2);
+ }
+//  27.
+function DNAtoRNA(dna) {
+  // create a function which returns an RNA sequence from the given DNA sequence
+  return dna.replace(/T/g, 'U');
+}
+// 28
+function findSmallestInt(arr) {
+  //your code here
+  
+return Math.min(...arr);
+}
